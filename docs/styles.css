@@ -195,7 +195,7 @@
 .filter__item-radio_lamp:checked ~ .devices .panel {
   display: none;
 }
-.filter__item-radio_lamp:checked ~ .devices {
+.filter__item-radio_lamp:checked ~ .devices .panel_lamp {
   display: flex;
 }
 .filter__item-radio_cam:checked ~ .devices .panel {
