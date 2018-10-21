@@ -1,0 +1,8 @@
+{
+  "name": "shri2018-2-performance",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-imagemin": "^4.1.0"
+  }
+}
