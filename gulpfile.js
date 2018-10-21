@@ -1,5 +1,6 @@
 const gulp = require('gulp'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    responsive = require('gulp-responsive');
 
 gulp.task('images', () => {
     return gulp.src('./src/assets/*.+(svg|png)')
@@ -12,5 +13,16 @@ gulp.task('images', () => {
                 ]
             })
         ]))
+        .pipe(gulp.dest('./docs/assets'))
+})
+
+gulp.task('sh', () => {
+    return gulp.src('./src/assets/sh.png')
+        .pipe(responsive({
+            'sh.png': {
+                width: 630,
+                min: true
+            }
+        }))
         .pipe(gulp.dest('./docs/assets'))
 })
